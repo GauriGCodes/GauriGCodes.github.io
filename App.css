@@ -689,9 +689,7 @@ footer span a:hover {
     border-color: crimson;
     background-color:white;
 }
-fas{
-    color: white;
-}
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -867,5 +865,6 @@ fas{
   .services .serv-content .card {
     width: 100%;
     font-size: 0.7em;
+    height: 400px;
   }
 }
