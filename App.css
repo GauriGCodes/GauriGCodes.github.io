@@ -864,7 +864,10 @@ footer span a:hover {
   }
   .services .serv-content .card {
     width: 100%;
-    font-size: 0.7em;
+    font-size: 0.75em;
     height: 400px;
   }
+  .card .box .text{
+    font-size: 0.8em;
+  } 
 }
