@@ -161,7 +161,6 @@ section .title::after {
 
 .navbar .menu li a {
   display: block;
-  color: #;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -221,7 +220,7 @@ section .title::after {
   margin-left: -3px;
 }
 
-.home .home-content .text-2 span {
+.home .home-content .text-2 {
   color: #64FFDA;
   transition: all 0.3s ease;
 }
@@ -264,10 +263,10 @@ section .title::after {
 }
 
 .about .about-content .left img {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   object-fit: cover;
-  border-radius: 6px;
+  box-shadow: 24px 20px white, 24px 20px 0 1px #dc143c;
 }
 
 .about .about-content .right {
@@ -320,8 +319,12 @@ section .title::after {
 
 #app-links{
     color: #64FFDA;
-    font-size: larger;
+    font-size: medium;
     font-weight: 600;
+}
+
+#app-links:hover{
+  text-decoration: underline;
 }
 
 /* services section styling */
@@ -346,9 +349,12 @@ section .title::after {
     color: #64FFDA;
 }
 
+
+
 .services .serv-content .card {
-  width:calc(50% - 30px);
+  width:calc(50% - 20px);
   margin: 10px;
+  height: 400px;
   background: #222;
   text-align: justify;
   border-radius: 6px;
@@ -365,9 +371,8 @@ section .title::after {
   transform: scale(1.05);
 }
 
-.services .serv-content .card i {
-  font-size: 50px;
-  color: crimson;
+.services .serv-content .card{
+  font-size: 1em;
   transition: color 0.3s ease;
 }
 
@@ -376,19 +381,32 @@ section .title::after {
 }
 
 .services .serv-content .card .text {
-  font-size: 25px;
+  font-size: 1.1em;
   font-weight: 500;
   margin: 10px 0 7px;
 }
+.fab .fas {
+  color: #64FFDA;
+  font-size: 22px; 
+}
+
 
 /* skills section styling */
 
-.skills .title::after {
-  content: "what I know";
+.skills .skills-content {
+  display: flex;
 }
 
-.skills .skills-content .column {
-  width: calc(50% - 30px);
+.skills .skills-content .left {
+  width: calc(70% - 30px); 
+}
+
+.skills .skills-content .right {
+  width: calc(30% - 30px); 
+}
+
+.skills .title::after {
+  content: "what I know";
 }
 
 .skills .skills-content .left .text {
@@ -461,6 +479,15 @@ section .title::after {
   animation: fadeIn 1s ease-in-out forwards; 
 }
 
+.skill-logo{
+  width: 100%;
+}
+
+.skill-logo img {
+  max-width: 100%; 
+  height: auto; 
+}
+
 @keyframes fadeIn {
     0% {
       opacity: 0; 
@@ -471,7 +498,6 @@ section .title::after {
       transform: translateY(0); 
     }
   }
-
 
 .owl-dots {
   text-align: center;
@@ -562,6 +588,7 @@ section .title::after {
 .sub-title a:hover{
     color: crimson;
 }
+
 
 .contact .right form .fields {
   display: flex;
@@ -672,11 +699,21 @@ fas{
     height: 350px;
     width: 350px;
   }
+  .services .serv-content .card {
+    margin-bottom: 20px;
+    font-size: 0.8em;
+
+  }
 }
 
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
+  }
+  .services .serv-content .card {
+    margin-bottom: 20px;
+    font-size: 0.7em;
+
   }
 }
 
@@ -748,8 +785,9 @@ fas{
   }
 
   .services .serv-content .card {
-    width: calc(50% - 10px);
     margin-bottom: 20px;
+    font-size: 0.7em;
+
   }
 
   .skills .skills-content .column,
@@ -778,6 +816,7 @@ fas{
 
   .services .serv-content .card {
     width: 100%;
+    font-size: 0.7em;
   }
 }
 
@@ -815,5 +854,18 @@ fas{
     width: 35px;
     font-size: 23px;
     line-height: 38px;
+  }
+  .services .serv-content .card {
+    width: 100%;
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .skill-logo {
+    display: none; /* Hide the skill logo */
+  }
+  .services .serv-content .card {
+    width: 100%;
+    font-size: 0.9em;
   }
 }

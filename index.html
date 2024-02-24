@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script type="text/javascript" src="App.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="..." crossorigin="anonymous" />
   <link rel="stylesheet" href="App.css">
 </head>
 
@@ -20,7 +21,11 @@
         <li><a href="#projects" class="menu-btn">Projects</a></li>
         <li><a href="#skills" class="menu-btn">Skills</a></li>
         <li><a href="#contact" class="menu-btn">Contact</a></li>
-        <li><a href="https://drive.google.com/file/d/1OqbL_UmjH30731guy4cs4whHDE85XTXl/view?usp=share_link" class="menu-btn" id="menu-btn-res" target="_blank">Resume</a></li>
+        <li><a href="https://leetcode.com/GauriGuptaCodes/" target="_blank" class="menu-btn">LeetCode</a></li>
+        <li><a href="https://github.com/GauriGCodes" target="_blank" class="menu-btn">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/gaurigupta8/" target="_blank" class="menu-btn">LinkedIn</a></li>
+        <li><a href="https://drive.google.com/file/d/1RDOzsBcX4hN4_Povz-NEx4dbrAcUyxng/view?usp=sharing"
+            class="menu-btn" id="menu-btn-res" target="_blank">Resume</a></li>
       </ul>
     </div>
   </nav>
@@ -29,8 +34,8 @@
     <div class="max-width">
       <div class="home-content">
         <div class="text-1">Hello! my name is</div>
-        <div class="text-2"><span>G</span>au<span>ri </span>Gu</span>pta.</div>
-        <div class="text-3">I'm a Software Developer and I love exploring new things.</div>
+        <div class="text-2"><span>G</span>au<span>ri </span>Gu</span>pta</div>
+        <div class="text-3">I'm a Full-Stack Developer</div>
         <a href="mailto:gouri88gupta@gmail.com" target="_blank">Contact</a>
       </div>
     </div>
@@ -49,7 +54,7 @@
           </div>
           <p>
             I am a Computer Science graduate from Pace University, set to graduate in May 2024 with a strong GPA of
-            3.88. Currently, I am a software developer at <a id="company-links"
+            3.9. Currently, I am a software developer at <a id="company-links"
               href="https://seidenbergcreativelabs.com/" target="_blank">Seidenberg Creative Labs</a>, where my focus
             lies in React and
             JavaScript. My previous role as a Full Stack Developer at <a id="company-links"
@@ -59,7 +64,8 @@
             truly drives me is an unquenchable curiosity and a deep-seated passion for develiping innovative projects
             that contribute positively to the world.
           </p>
-          <a class="res-link" href="https://drive.google.com/file/d/1OqbL_UmjH30731guy4cs4whHDE85XTXl/view?usp=share_link" target="_blank">Download Resume</a>
+          <a class="res-link" href="https://drive.google.com/file/d/1RDOzsBcX4hN4_Povz-NEx4dbrAcUyxng/view?usp=sharing"
+            target="_blank">Download Resume</a>
         </div>
       </div>
     </div>
@@ -70,22 +76,26 @@
     <div class="max-width">
       <h2 class="title">My Projects</h2>
       <div class="serv-content">
+
         <div class="card">
           <div class="box">
-            <div class="text"><a id="app-links" href="https://main.d2sa39f9ntk4z3.amplifyapp.com/"
-                target="_blank"></a>NYSPHA Advocacy Tools</div>
+            <div class="text"><i class="fab fa-github-square"></i> <a id="app-links" href="https://github.com/GauriGCodes/Blog-API.git"
+                target="_blank">RESTful Blog API</a></div>
             <p>
-              The NYSPHA Advocacy Tool is a website that allows NYSPHA members to contact their elected officials about
-              public health issues in a few easy steps. Members can select the issue they wish to take action on,
-              provide their contact information and the email addresses of the elected officials they wish to contact,
-              and add a personal message to their email. Once the form is complete, members can click the "Send Message"
-              button to send their email.
+              This project aimed to boost platform engagement by 20% by creating a scalable and secure RESTful Blog API
+              using Spring Boot, Spring Security, JWT, and MySQL. Leveraging AWS for deployment ensured robust
+              performance and availability. With Spring Security and JWT, authentication and authorization were
+              implemented to safeguard the API. The MySQL database facilitated efficient storage and retrieval of
+              blog-related data. Overall, the project focused on enhancing user interaction while prioritizing security
+              and scalability.
             </p>
           </div>
         </div>
+
         <div class="card">
           <div class="box">
-            <div class="text">SpringBoot Mailer API</div>
+            <div class="text"><i class="fab fa-github-square"></i> <a id="app-links" href="https://github.com/GauriGCodes/SpringBoot-Mailer-API.git"
+                target="_blank">SpringBoot Mailer API</a></div>
             <p>
               Spring Boot Mailer API that allows users to send automated email updates and confirmations to any email
               address, triggered by events or cron jobs. It supports plain text, HTML, and MIME emails, attachments,
@@ -95,9 +105,11 @@
             </p>
           </div>
         </div>
+
         <div class="card">
           <div class="box">
-            <div class="text">Log Search Utility</div>
+            <div class="text"><i class="fab fa-github-square"></i> <a id="app-links" href="https://github.com/GauriGCodes/log-search-utility.git"
+                target="_blank">Log Search Utility</a></div>
             <p>
               Full Stack Application (Log Search Utility) to enhance log analysis efficiency by 70%. It is
               built with React, Spring Boot, Spring Security LDAP, and Apache Lucene, and it enables easy log searching
@@ -106,7 +118,50 @@
             </p>
           </div>
         </div>
-        
+
+        <div class="card">
+          <div class="box">
+            <div class="text"><i class="fab fa-github-square"></i> <a id="app-links" href="https://github.com/GauriGCodes/TimeSheet-Management-System.git"
+                target="_blank">TimeSheet Management System</a></div>
+            <p>
+              This project aimed to streamline timesheet reporting using Java, React, and Spring Boot. By integrating
+              OAuth2.0 login and MySQL, it ensured secure authentication and efficient data management. This solution
+              reduced manual reporting efforts by 10 hours weekly. The Java backend enabled seamless data processing,
+              while React's frontend offered user-friendly interaction. Spring Boot ensured reliability and scalability,
+              optimizing time management and enhancing data security in timesheet processes.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="text"><i class="fab fa-github-square"></i> <a id="app-links" href="https://github.com/GauriGCodes/Contact-Form-System.git"
+                target="_blank">Contact Form System</a></div>
+            <p>
+              Developed contact form system in React and Spring Boot, enabling streamlined routing of inquiries to
+              multiple NGO
+              departments. Achieved a 40% faster response time for user inquiries, feedback, and support requests,
+              significantly
+              enhancing overall operational efficiency.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="text"><i class="fab fa-github-square"></i> <a id="app-links" href="https://github.com/GauriGCodes/AWS-File-Upload.git"
+                target="_blank">AWS File Uploads</a></div>
+            <p>
+
+              This project utilized React.js and Spring Boot to create a full-stack application with a microservices
+              architecture. Its core aim was to optimize file uploads to Amazon S3, resulting in a notable 30% speed
+              enhancement. Efficiently managing over 1000 daily uploads via a RESTful API ensured streamlined data
+              handling. The combination of React.js for dynamic UIs and Spring Boot for robust backend support
+              facilitated seamless scalability for handling large volumes of file uploads.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -114,55 +169,73 @@
   <section class="skills" id="skills">
     <div class="max-width">
       <h2 class="title">My skills</h2>
-      <div class="skill-set">
-        <h3>Programming technologies</h3>
-        <span>Java</span>
-        <span>Python</span>
-        <span>Java Script</span>
-      </div>
-      <div class="skill-set">
-        <h3>Back-End Frameworks</h3>
-        <span>Maven</span>
-        <span>SpringBoot</span>
-        <span>Hibernate</span>
-        <span>Flask</span>
-      </div>
-      <div class="skill-set">
-        <h3>Front-end technologies</h3>
-        <span>Junit</span>
-        <span>Mockito</span>
-        <span>Swagger</span>
-      </div>
-      <div class="skill-set">
-        <h3>Database</h3>
-        <span>MySQl</span>
-      </div>
-      <div class="skill-set">
-        <h3>DevOps</h3>
-        <span>Git</span>
-        <span>Chef</span>
-        <span>Jenkins</span>
-        <span>SonarQube</span>
-        <span>Autosys</span>
-        <span>Docker</span>
-      </div>
-      <div class="skill-set">
-        <h3>Operating Systems</h3>
-        <span>Linux</span>
-        <span>Unix</span>
-        <span>Windows</span>
-      </div>
-      <div class="skill-set">
-        <h3>Project Management</h3>
-        <span>Jira</span>
-        <span>Confluence</span>
-        <span>Agile Methodologies (Scrum)</span>
-        <span>ServiceNow</span>
-        <span>Bitbucket</span>
-        <span>ITIL(Incident, Change management)</span>
+      <div class="skills-content">
+        <div class="left">
+          <div class="skill-set">
+            <h3>Programming technologies</h3>
+            <span>Java</span>
+            <span>Python</span>
+            <span>Java Script</span>
+          </div>
+          <div class="skill-set">
+            <h3>Back-End Frameworks</h3>
+            <span>Maven</span>
+            <span>SpringBoot</span>
+            <span>Hibernate</span>
+            <span>Spring Security</span>
+            <span>Spring MVC</span>
+          </div>
+          <div class="skill-set">
+            <h3>Front-end technologies</h3>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+            <span>React</span>
+          </div>
+          <div class="skill-set">
+            <h3>Testing Frameworks</h3>
+            <span>Junit</span>
+            <span>Mockito</span>
+            <span>Swagger</span>
+          </div>
+          <div class="skill-set">
+            <h3>Database</h3>
+            <span>MySQl</span>
+          </div>
+          <div class="skill-set">
+            <h3>DevOps</h3>
+            <span>Git</span>
+            <span>Chef</span>
+            <span>Jenkins</span>
+            <span>SonarQube</span>
+            <span>Autosys</span>
+            <span>Docker</span>
+          </div>
+          <div class="skill-set">
+            <h3>Operating Systems</h3>
+            <span>Linux</span>
+            <span>Unix</span>
+            <span>Windows</span>
+          </div>
+          <div class="skill-set">
+            <h3>Project Management</h3>
+            <span>Jira</span>
+            <span>Confluence</span>
+            <span>Agile Methodologies (Scrum)</span>
+            <span>ServiceNow</span>
+            <span>Bitbucket</span>
+            <span>ITIL(Incident, Change management)</span>
+          </div>
+        </div>
+        <div class="right">
+          <div class="skill-logo">
+            <img src="skills.png" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
 
   <section class="contact" id="contact">
     <div class="max-width">
@@ -177,21 +250,29 @@
           <div class="icons">
             <div class="row">
               <div class="info">
-                <div class="head">Name</div>
+                <div class="head"><i class="fas fa-user"></i> Name</div>
                 <div class="sub-title">Gauri Gupta</div>
               </div>
             </div>
             <div class="row">
               <div class="info">
-                <div class="head">LinkedIn</div>
-                <div class="sub-title"><a href="https://www.linkedin.com/in/gaurigupta8/" target="_blank">https://www.linkedin.com/in/gaurigupta8/</a></div>
+                <div class="head"><i class="fab fa-linkedin"></i> LinkedIn</div>
+                <div class="sub-title"><a href="https://www.linkedin.com/in/gaurigupta8/"
+                    target="_blank">https://www.linkedin.com/in/gaurigupta8/</a></div>
               </div>
             </div>
             <div class="row">
               <div class="info">
-                <div class="head">Email</div>
+                <div class="head"><i class="fas fa-envelope"></i> Email</div>
                 <div class="sub-title">gouri88gupta@gmail.com</div>
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="info">
+              <div class="head"><i class="fab fa-github-square"></i> GitHub</div>
+              <div class="sub-title"><a href="https://github.com/GauriGCodes"
+                  target="_blank">https://github.com/GauriGCodes</a></div>
             </div>
           </div>
         </div>
@@ -213,7 +294,8 @@
               <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
             </div>
             <div class="button-area">
-              <button id="submit-btn" type="submit"><a id="submit" href="mailto:gouri88gupta@gmail.com" target="_blank">Send message</a></button>
+              <button id="submit-btn" type="submit"><a id="submit" href="mailto:gouri88gupta@gmail.com"
+                  target="_blank">Send message</a></button>
             </div>
           </form>
         </div>
